@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"testlcd16x02\main.o"
+"testlcd16x02\stm32f1xx_hal_msp.o"
+"testlcd16x02\stm32f1xx_it.o"
+"testlcd16x02\stm32f1xx_hal_rcc.o"
+"testlcd16x02\stm32f1xx_hal_flash.o"
+"testlcd16x02\stm32f1xx_hal_gpio.o"
+"testlcd16x02\stm32f1xx_hal_gpio_ex.o"
+"testlcd16x02\stm32f1xx_hal_cortex.o"
+"testlcd16x02\stm32f1xx_hal_pwr.o"
+"testlcd16x02\stm32f1xx_hal_rcc_ex.o"
+"testlcd16x02\stm32f1xx_hal_tim_ex.o"
+"testlcd16x02\stm32f1xx_hal_tim.o"
+"testlcd16x02\stm32f1xx_hal.o"
+"testlcd16x02\stm32f1xx_hal_dma.o"
+"testlcd16x02\stm32f1xx_hal_flash_ex.o"
+"testlcd16x02\startup_stm32f103xb.o"
+"testlcd16x02\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TESTLCD16x02\TESTLCD16x02.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TESTLCD16x02.map" -o TESTLCD16x02\TESTLCD16x02.axf
